@@ -1,146 +1,186 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>On Wheels Home Page</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>On Wheels Home Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
-    img{
-        border-radius: 20px;
+  <style>
+    img {
+      border-radius: 20px;
     }
-    
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-.hero-image {
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("IMG_9708.jpg");
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-.hero-text button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
-}
-
-.hero-text button:hover {
-  background-color: #555;
-  color: white;
-}
-</style>
-</head>
-
-<body>
-<div class="hero-image">
-  <div class="hero-text">
-    <h1 style="font-size:50px">On Wheels</h1>
-    <p>A Community Guide To Life On The Road</p>
-    <button>Home</button>
-    <button href="http://localhost:8080/vanlife.html">What is Van Life?</button>
-    <button>Routes</button>
-    <button>Community</button>
-  </div>
-</div>
-
-<style>
-    * {
-      box-sizing: border-box;
+    img {
+      opacity: 0.5;
     }
-    
+
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .hero-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("IMG_9708.jpg");
+      height: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+
+    .hero-text button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 10px 25px;
+      color: black;
+      background-color: #ddd;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .hero-text button:hover {
+      background-color: #555;
+      color: white;
+    }
+
+    .button {
+      background-color: #cbcecb;
+      /* Green */
+      border: none;
+      color: rgb(20, 15, 15);
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+
+    .button:hover {
+      background-color: rgb(114, 202, 218);
+    }
+
     .row {
       display: flex;
     }
-    
+
     .column {
       flex: 33.33%;
       padding: 20px;
     }
 
-  img {
-      opacity: 0.5;
+    .rectangle {
+      height: 30px;
+      width: 100%;
+      background-color: rgb(235, 214, 97);
     }
 
-    .rectangle {
-  height: 30px;
-  width: 100%;
-  background-color: rgb(153, 197, 223);
-}
+    .rectangle2 {
+      height: 30px;
+      width: 100%;
+      background-color: rgb(212, 136, 36);
+    }
 
-.rectangle2 {
-  height: 30px;
-  width: 100%;
-  background-color: rgb(235, 214, 97);
-}
+    .rectangle3 {
+      height: 30px;
+      width: 100%;
+      background-color: rgb(114, 202, 218);
+    }
 
-.recent {
-  padding: 10px 16px;
-  background: rgb(221, 142, 68);
-  color: #f1f1f1;
-}
 
-/* Page content */
-.content {
-  padding: 16px;
-}
+    .column {
+      text-align: center;
+    }
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
+    /* Container holding the image and the text */
+    .container {
+      position: relative;
+      text-align: left;
+      color: rgb(15, 7, 7);
+      font-size: 20px;
+      width: 100%;
+      height: 300px;
+    }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 102px;
-}
+    /* Bottom left text */
+    .bottom-left {
+      position: absolute;
+      bottom: 8px;
+      left: 16px;
+      color: papayawhip;
+    }
 
-.column{
-  text-align: center;
-}
-    </style>
-    
-    <div class="rectangle"></div>
-    <div class="rectangle2"></div>
+    .recent-articles{
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      padding-top: 0px;
+      color: rgb(235, 230, 220);
+    }
+  </style>
+</head>
 
-    <div class="recent" id="recentArticles">
-      <h1 style="text-align: center;">Recent Articles</h1>
-    </div> 
+<body style="background-color:rgb(65, 64, 62);">
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:60px">On Wheels</h1>
+      <p style="font-size: 20px;">A Community Guide To Life On The Road</p>
+      <a class="button" href="http://localhost:8080/onwheels.html">Home</a>
+      <a class="button" href="http://localhost:8080/vanlife.html">What is Van Life?</a>
+      <a class="button" href="http://localhost:8080/routes.html">Route Guides</a>
+      <a class="button">Community</a>
+    </div>
+  </div>
 
-    <div class="row">
-      <div class="column">
-        <img src="craterlake.jpg" alt="Lake" style="width: 75%;" height="300">
-        <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;">Add To Your Bucketlist: Crater Lake Route</p>
-      </div>
-      <div class="column">
-        <img src="packinglist.jpg" alt="Packing" style="width:75%" height="300">
-        <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;">10 Essential Items for Life on the Road</p>
-      </div>
-      <div class="column">
-        <img src="carcamp.jpg" alt="Van" style="width:75%" height="300">
-        <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;">How to Know is Van Life for You?</p>
+  <div class="rectangle"></div>
+  <div class="rectangle2"></div>
+  <div class="rectangle3"></div>
+
+  <div class="recent-articles">
+    <p style="font-family: Arial, Helvetica, sans-serif;">Recent Articles</p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="container">
+        <a href="https://www.nps.gov/crla/planyourvisit/maps.htm">
+          <img src="craterlake.jpg" style="width: 100%;" height="300">
+          <p class="bottom-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif;">Add To Your Bucketlist: Crater
+            Lake</p>
+        </a>
       </div>
     </div>
+    <div class="column">
+      <div class="container">
+        <a href="https://www.road-trip-usa.com/blog/vanlife-essentials">
+          <img src="packinglist.jpg" style="width:100%" height="300">
+          <p class="bottom-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif;">10 Essential Items for Life on
+            the Road</p>
+        </a>
+      </div>
+    </div>
+    <div class="column">
+      <div class="container">
+        <a href="http://www.alwaystheroad.com/blog/2017/3/24/is-van-life-for-you-how-to-know-if-its-right-for-you">
+          <img src="carcamp.jpg" style="width:100%" height="300">
+          <p class="bottom-left" style="font-family:Verdana, Geneva, Tahoma, sans-serif;">How to Know is Van Life for
+            You?
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
